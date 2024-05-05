@@ -1,0 +1,324 @@
+/* スマホ */
+@media screen and (max-width: 960px) {
+    
+
+    html{
+        font-size: 25%;
+    }
+    .main-title{
+        text-align: center;
+    }
+    /* header */
+    #header{
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+    #header h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+    
+
+    #header li{
+        font-size: 100px;
+    }
+
+    #header li img.icon{
+        width: 20px;
+        margin-top: 15px;
+    }
+
+    #header ul li{
+        font-size: 10rem;
+        margin-left: 5px;
+        padding-left: 12px;
+    }
+
+    #header img.main-icon{
+        width: 10%;
+        padding-right: 5%;
+    }
+
+    .sub-title{
+        padding-left: 10px;
+        font-size: 0.8rem;
+        font-family: "Libre Baskerville", serif;
+    }
+    
+    .main-title{
+        font-size: 1rem;
+    }
+    
+
+    #main {
+        grid-template-columns: 1fr; /* 画面が狭い場合は1列にする */
+    }
+    .map-container {
+        height: auto; /* スマートフォンの場合、マップの高さを縮小 */
+    }
+}
+html{
+    background: radial-gradient;
+    font-size: 100%;
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        /* font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+       */
+      
+      /* .libre-baskerville-bold {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .libre-baskerville-regular-italic {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+       */
+}
+html,body {
+    height: 100%;
+  }
+  
+  body:after {
+    /*擬似要素をつくる*/
+    position: fixed;/*固定配置*/
+    top: 0; left: 0;/*左上に固定*/
+    width: 100%;
+    height: 100%;/*画面全体を覆う*/
+    content: "";
+    background: #f89174;/*保険用*/
+    background: -moz-linear-gradient(top, #c8cbd3 0%,#9598ae 100%);
+    background: -webkit-linear-gradient(top,  #c8cbd3 0%,#9598ae 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbcacb', endColorstr='#f79697',GradientType=0 );
+    background: linear-gradient(to bottom, #dadde500 0%,#9598ae 100%);
+    z-index: -1;
+  }
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.3rem;
+    
+}
+
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.flex{
+    display: flex;
+}
+.main-title {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1px;
+    font-size: 2.4rem;
+    color: #24292e;
+  }
+
+
+
+.main-title span{
+    font-size: 1.4rem;
+}
+  
+  
+.site-title{
+    line-height: 1px;
+    font-weight: 600px;
+    font-size: 3.0rem;
+}
+
+.site-title a{
+    color: #24292e;
+}
+
+.sub-title{
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-size: 2rem; /* サブタイトルのフォントサイズ */
+    color: #000000; /* サブタイトルのテキストカラー */
+    margin-top: 13px; /* サブタイトルとメインタイトルの間のマージン */
+}
+
+/* ヘッダー */
+#header{
+    background-color: #8c96a4ad;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    height: 130px;
+}
+
+#header h1{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+#header ul{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+#header ul li{
+    font-size: 1.4rem;
+    margin-left: 30px;
+}
+
+#header ul li a{
+    color: #24292e;
+    transition: all 0.3s;
+}
+
+#header ul li a:hover{
+    opacity: 0.5;
+}
+
+#header li img.icon{
+    width: 40px;
+}
+
+#header img.main-icon{
+    width: 120px;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.main-title{
+    font-size: 3rem;
+}
+
+
+
+/* メイン */
+#main {
+    /* background-color:rgb(178, 183, 201) ; */
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto; /* 中央配置 */
+    padding: 0 4%; /* 左右の余白 */
+    max-width: 100%; /* 最大幅 */
+    font-size: 2rem;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* 2つの列を均等に分割 */
+    grid-template-rows: auto; /* グリッドの行の高さを自動調整 */
+    grid-gap: 20px; /* グリッド要素間の間隔 */
+   
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* 2つの列を均等に分割 */
+    grid-template-rows: auto; /* グリッドの行の高さを自動調整 */
+    grid-gap: 20px; /* グリッド要素間の間隔 */
+   
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* 2つの列を均等に分割 */
+    grid-template-rows: auto; /* グリッドの行の高さを自動調整 */
+    grid-gap: 20px; /* グリッド要素間の間隔 */
+   
+}
+#main img{
+    margin: 7% auto;
+    border-radius: 4%;
+}
+
+.mark span {
+    background: linear-gradient(transparent 50%, #f29dd4 50%);
+    padding: 0 0.1em;
+  }
+
+  /* 線 */
+#line{
+    color: #000000;
+    text-align: center;
+    height: 20px;
+    z-index: 2;
+}
+
+#line h1{
+    border-bottom:solid#000000 3px;
+    border-top: solid#000000 3px;
+}
+/* セクション */
+#section{
+    /* background-color:rgb(178, 183, 201) ; */
+    padding: 7% 4%;
+    font-size: 2rem;
+
+}
+
+#section h1{
+    padding-top: 4%;
+}
+
+#section p{
+    font-size: 2rem;
+}
+.map-container {
+    width: 100%; /* マップの幅を100%に設定 */
+    max-width: 600px; /* マップの最大幅を設定 */
+    height: 450px; /* マップの高さを固定値に設定 */
+    overflow: hidden; /* マップのはみ出しを隠す */
+}
+
+.box27 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 p {
+    margin: 0; 
+    padding: 0;
+}
+
+#topics{
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto; /* 中央配置 */
+    padding: 0 4%; /* 左右の余白 */
+    max-width: 100%; /* 最大幅 */
+    font-size: 2rem;
+
+}
